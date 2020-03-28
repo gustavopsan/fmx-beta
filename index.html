@@ -1,0 +1,45 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>FMx WebApp</title>
+</head>
+<body>
+    <nav id="menubar" class="menubar navbar">
+        <div class="container">
+            <div class="navbar-collapse">
+                <div class="row">
+                    <div class="logomark"><a href=""><img src="Res/logo.png" alt="Logo" class="logo"></a></div>
+                    <div class="row bar1">
+                    <a href=""><h1 class="title">FMx</h1><p class="title1">Forms</p></a>
+                        <div class="side1">
+                            <p>Tipo Doc.: <var>FM XXX-00</var></p>
+                            <p>Formulário Nº: <input type="number" class="doc_num" id="doc_num" value="0"></p>
+                        </div>
+                    </div>
+                    <div class="row bar2">
+                        <input type="button" class="btn btn_bar" value="FM XXX-00">
+                        <input type="button" class="btn btn_bar" value="FM 37-10">
+                        <input type="button" class="btn btn_bar" value="FM 157-03">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container graphic">
+        <h2 class="title">FM XXX - 00</h2>
+        <h5 style="margin-left: 20px;">Data da Coleta:</h5>
+        <div>
+            <input style="margin-left: 20px;" type="date" name="date" id="date">
+            <input type="button" class="btn_go" value="Go">
+        </div>
+        <canvas class="main_chart chart"></canvas>
+        <script src="Javascript/main_chart.js"></script>
+    </div>
+</body>
+</html>
