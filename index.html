@@ -37,10 +37,41 @@
         <h5 style="margin-left: 20px;">Data da Coleta:</h5>
         <div>
             <input style="margin-left: 20px;" type="date" name="date" id="date">
-            <input type="button" id="btn_go" class="btn_go" value="Go" onclick="updatedata()">
+            <input type="button" id="btn_go" class="btn_go" value="Go">
         </div>
         <canvas class="main_chart chart"></canvas>
         <script src="Javascript/main_chart.js"></script>
+
+        <div class="data container">
+            <div class="row">
+                <div class="col-sm">
+                    <p>Resíduo Autoconer: <var id="autoconer">0</var></p>
+                </div>
+                <div class="col-sm">
+                    <p>Inicio Rolo Urdideira: <var id="urdideira">0</var></p>
+                </div>
+                <div class="col-sm">
+                    <p>Fio s/ Goma Engomadeira: <var id="fsg_eng">0</var></p>
+                </div>
+                <div class="col-sm">
+                    <p>Fio c/ Goma Engomadeira: <var id="fcg_eng">0</var></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p>Fio c/ Goma Tecelagem: <var id="fcg_tec">0</var></p>
+                </div>
+                <div class="col-sm">
+                    <p>Resíduo Picanol: <var id="picanol">0</var></p>
+                </div>
+                <div class="col-sm">
+                    <p>Residuo Itema: <var id="itema">0</var></p>
+                </div>
+                <div class="col-sm">
+                    <p>Varreduras: <var id="varredura">0</var></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
