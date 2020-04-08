@@ -20,8 +20,8 @@ body {
 .title {
     font-family: 'Fira Code';
     margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     color: #394472;
     font-size: 40px;
 }
@@ -31,10 +31,6 @@ body {
     color: #394472;
 }
 
-.doc_num {
-    width: 50px;
-}
-
 .side1 {
     margin-top: 15px;
 }
@@ -42,6 +38,10 @@ body {
 .side1 p {
     font-family: 'Fira Code';
     font-size: 15px;
+}
+
+.doc_num {
+    width: 50px;
 }
 
 .btn_bar {
@@ -57,7 +57,7 @@ body {
 }
 
 .bar1 {
-    margin-left: 40px;
+    margin-left: 20px;
     margin-right: 20px;
 }
 
@@ -65,22 +65,47 @@ body {
     text-align: center;
 }
 
-.chart {
-    padding-top: 20px;
-    max-width: 1100px;
-    max-height: 600px;
-    min-height: 400px;
+.header {
+    text-align: center;
 }
 
-.btn_go {
-    background-color: #394472;
-    color: white;
+.btn_check {
+    width: 100px;
+    height: 40px;
+}
+
+.header h2 {
+    margin-bottom: 40px;
+}
+
+#date {
+    height: 40px;
+}
+
+.form {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.item {
+    margin-bottom: 40px;
+}
+
+.submit {
+    margin-bottom: 30px;
+    width: 200px;
+    height: 50px;
     border: none;
-    height: 30px;
-    width: 60px;
+    color: azure;
+    background-color: #394472;
 }
 
-.data {
-    margin-left: 20px;
-    margin-top: 20px;
+.submit:hover {
+    background-color: #6a89cc;
+}
+
+.dados {
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
 }

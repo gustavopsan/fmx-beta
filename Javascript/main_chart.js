@@ -34,7 +34,7 @@ $('#btn_go').click( function () {
 	
 	var date = $('#date').val();
 
-	$.get( `http://localhost:3000/fm_xxx/${date}`, function( data ) {
+	$.get( `http://127.0.0.1:3000/fm_xxx/${date}`, function( data ) {
 
         $('#doc_num').val(data.data.id_form)
         $('#autoconer').html(data.data.autoconer);
