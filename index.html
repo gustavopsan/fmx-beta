@@ -2,75 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="Javascript/main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="Style/style.css">
-    <title>FMx WebApp</title>
+    <title>FMx - Login</title>
 </head>
 <body>
-    <nav id="menubar" class="menubar navbar">
-        <div class="container">
-            <div class="navbar-collapse d-flex justify-content-center">
-                <div class="row">
-                    <div class="logomark"><a href="http://www.peixotogoncalves.com.br/"><img src="Res/logo2.png" alt="Logo" class="logo"></a></div>
-                    <div class="row bar1">
-                    <a href=""><h1 class="title">FMx</h1><p class="title1">Form</p></a>
-                        <div class="side1">
-                            <p>Tipo Doc.: <var>FM XXX-00</var></p>
-                            <p>Formulário Nº: <input type="number" class="doc_num" id="doc_num" value="0"></p>
-                        </div>
-                    </div>
-                    <div class="row bar2">
-                        <input type="submit" id="btn_form" class="btn btn_bar" value="Novo Formulário" onclick="location.href = 'Coleta/fmxxx/index.html'" >
-                        <input type="submit" id="btn_consultas" class="btn btn_bar" value="Consultas">
-                    </div>
-                </div>
-            </div>
+    <div class="app">
+        <div class="logomark"><a href="http://www.peixotogoncalves.com.br/"><img src="Res/logo2.png" class="logo" alt="logo_peixoto"></a></div>
+        <div class="name">
+            <h1>FMx</h1>
+            <h3>Formulários</h3>
         </div>
-    </nav>
-
-    <div class="container graphic">
-        <h2 class="title">FM XXX - 00</h2>
-        <h5 style="margin-left: 20px;">Data da Coleta:</h5>
-        <div>
-            <input style="margin-left: 20px;" type="date" name="date" id="date">
-            <input type="button" id="btn_go" class="btn_go" value="Go">
+        <div class="form">
+            <div class="username text"><input type="text" id="username" placeholder="Username"></div>
+            <div class="password text"><input type="password" id="password" placeholder="Password"></div>
         </div>
-        <canvas class="main_chart chart"></canvas>
-        <script src="Javascript/main_chart.js"></script>
-
-        <div class="data container">
-            <div class="row">
-                <div class="col-sm">
-                    <p>Resíduo Autoconer: <var id="autoconer">0</var></p>
-                </div>
-                <div class="col-sm">
-                    <p>Inicio Rolo Urdideira: <var id="urdideira">0</var></p>
-                </div>
-                <div class="col-sm">
-                    <p>Fio s/ Goma Engomadeira: <var id="fsg_eng">0</var></p>
-                </div>
-                <div class="col-sm">
-                    <p>Fio c/ Goma Engomadeira: <var id="fcg_eng">0</var></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <p>Fio c/ Goma Tecelagem: <var id="fcg_tec">0</var></p>
-                </div>
-                <div class="col-sm">
-                    <p>Resíduo Picanol: <var id="picanol">0</var></p>
-                </div>
-                <div class="col-sm">
-                    <p>Residuo Itema: <var id="itema">0</var></p>
-                </div>
-                <div class="col-sm">
-                    <p>Varreduras: <var id="varredura">0</var></p>
-                </div>
-            </div>
-        </div>
+        <input class="bt_login" id="login" type="submit" value="Login">
+        <div><span id="alerta" class="badge badge-pill badge-danger"></span></div>
     </div>
+    
 </body>
 </html>

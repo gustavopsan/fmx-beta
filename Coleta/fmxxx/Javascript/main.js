@@ -1,5 +1,6 @@
 $(document).ready(function () {
       
+    //Configurando a passagem entre os campos de texto
       $('.form').on('keyup', 'input', (event) => {
           if (event.which === 13) {
               var inputs = $('.form').find('input:visible');
@@ -10,5 +11,7 @@ $(document).ready(function () {
           if (select.length === 0) {
               event.target.focus();
           }
-      })
+      });
+
+      
 });
