@@ -58,6 +58,35 @@ app.post('/auth', (req, res) => {
     });
 });
 
+app.post('/new', (req, res) => {
+    
+        var dataColeta = req.body.data;
+        var res1 = req.body.res1;
+        var res2 = req.body.res2;
+        var res3 = req.body.res3;
+        var res4 = req.body.res4;
+        var res5 = req.body.res5;
+        var res6 = req.body.res6;
+        var res7 = req.body.res7;
+        var res8 = req.body.res8;
+
+    sql.query(`insert into fmxxx (date, autoconer, urdideira, fsg_eng, fcg_eng, fcg_tecelagem, res_picanol, res_itema, varreduras) values ('${dataColeta}', '${res1}', '${res2}', '${res3}', '${res4}', '${res5}', '${res6}', '${res7}', '${res8}')`, (error, results) => {
+        if (error) {
+            res.json({
+                status: false,
+                message: 'Erro inesperado na Query'
+            })
+        } else {
+            res.json({
+                status: true,
+                data: results,
+                message: 'Coleta registrada com sucesso!'
+            })
+        }
+    });
+
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });

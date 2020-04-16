@@ -16,7 +16,7 @@ create table users (
 insert into users (login ,first_name, last_name, email, `password`)
 values ('gustavopsan', 'Gustavo', 'P. Santana', 'gustavopsantana4@gmail.com', 'editpro7');
 
-select * from users;
+select * from users where login= 'gustavopsan' and `password`= 'editpro7';
 
 create table fmxxx (
 	`date` varchar(10) not null unique,
