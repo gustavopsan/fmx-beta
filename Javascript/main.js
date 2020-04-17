@@ -25,7 +25,7 @@ $(document).ready(function () {
 
             if (data.status === true) {
                 $('#alerta').html('');
-                window.location.href = '/home';
+                window.location.href = '/fmx/home';
             } else if (data.status === false) {
                 $('#alerta').html(data.message);
             }
