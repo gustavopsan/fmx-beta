@@ -35,3 +35,5 @@ insert into fmxxx (`date`, autoconer, urdideira, fsg_eng, fcg_eng, fcg_tecelagem
 values ('2020-03-26', 10.160, 2.600, 17.520, 25.440, 75.200, 10.000, 14.700, 23.600);
 
 select * from fmxxx;
+
+drop table fmxxx;
