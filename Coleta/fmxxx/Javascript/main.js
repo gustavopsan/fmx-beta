@@ -40,7 +40,7 @@ $(document).ready(function () {
         var res7 = res_itema.toFixed(3);
         var res8 = $('#varreduras').val();
         
-        $.post('http://127.0.0.1:3000/new', {data: date, res1: res1, res2: res2, res3: res3, res4: res4, res5: res5, res6: res6, res7: res7, res8: res8}, (data) => {
+        $.post('https://api-fmx.herokuapp.com/new', {data: date, res1: res1, res2: res2, res3: res3, res4: res4, res5: res5, res6: res6, res7: res7, res8: res8}, (data) => {
 
             if (data.status === true) { 
                 $('#alerta').html(data.message);

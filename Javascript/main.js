@@ -21,7 +21,7 @@ $(document).ready(function () {
         user = $('#username').val();
         pass = $('#password').val();
 
-        $.post("http://127.0.0.1:3000/auth", {username: user, password : pass}, function (data) {
+        $.post("https://api-fmx.herokuapp.com/auth", {username: user, password : pass}, function (data) {
 
             if (data.status === true) {
                 $('#alerta').html('');
