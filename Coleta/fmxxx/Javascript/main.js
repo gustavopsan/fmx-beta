@@ -14,7 +14,16 @@ $(document).ready(function () {
     });
 
     $('#btn_check').click( () => {
-        console.log($('#date').val());
+        var date = ($('#date').val());
+
+        $.get(`https://api-fmx.herokuapp.com/fm_xxx/${date}`, function(data) {
+            if (data.data === undefined) {
+                $('#alerta_check').attr('class', 'badge badge-pill badge-primary');
+                $('#alerta_check').html('Sem formulários para este dia!');
+            } else {
+                $('#alerta_check').html('Já existe formulário para este dia!');
+            }
+        })
     })
 
     $('#enviar').click( () => {
