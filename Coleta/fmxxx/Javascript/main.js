@@ -21,6 +21,7 @@ $(document).ready(function () {
                 $('#alerta_check').attr('class', 'badge badge-pill badge-primary');
                 $('#alerta_check').html('Sem formulários para este dia!');
             } else {
+                $('#alerta_check').attr('class', 'badge badge-pill badge-danger');
                 $('#alerta_check').html('Já existe formulário para este dia!');
             }
         })
