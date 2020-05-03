@@ -1,11 +1,10 @@
 function charge () {
     $.get("https://api-fmx.herokuapp.com/check", function (data) {
         if (data.status === false) {
-            //window.location.href = '../';
+            window.location.href = '../';
         } else if (data.status === true) {
-            var username;
             $.get("https://api-fmx.herokuapp.com/getUser", function (data) {
-                console.log(data);
+                $('#user').val(data.username);
             })
         }
     });
