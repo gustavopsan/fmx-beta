@@ -4,6 +4,7 @@ function charge () {
             //window.location.href = '../';
             alert(data.status);
         } else if (data.status === true) {
+            alert(data.status);
             $.get("https://api-fmx.herokuapp.com/getUser", function (data) {
                 $('#user').val(data.username);
             })
