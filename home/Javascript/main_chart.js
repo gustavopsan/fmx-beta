@@ -41,7 +41,6 @@ $('#btn_go').click( function () {
 
       $('#alerta').html(null);
 
-      $('#doc_num').val(data.data.id_form)
       $('#autoconer').html(data.data.autoconer);
       $('#urdideira').html(data.data.urdideira);
       $('#fsg_eng').html(data.data.fsg_eng);
