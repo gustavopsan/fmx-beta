@@ -3,7 +3,6 @@ function charge () {
         if (data.status === false) {
             window.location.href = '../';
         } else if (data.status === true) {
-            alert(data.status);
             $.get("https://api-fmx.herokuapp.com/getUser", function (data) {
                 $('#user').html(data.username);
             })
